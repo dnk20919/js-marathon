@@ -8,4 +8,67 @@ body {
   font-family: 'Muli', sans-serif;
   overflow: hidden;
   margin: 0;
+  background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header h2{
+  color: rgb(194, 192, 192);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: rgb(194, 192, 192);
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 900ms ease-in-out;
+}
+
+h3 {
+  display: block;
+  width: 100px;
+  background-color: #152A32;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+h3:hover {
+  background-color: rgb(194, 192, 192);
+  color: #0f2128;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 22px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+   opacity: 1;
+   transition: opacity 0.3s ease-in 0.4s;
 }
