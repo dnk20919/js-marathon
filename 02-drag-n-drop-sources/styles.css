@@ -31,13 +31,14 @@ body {
 
 .item {
   width: 150px;
-  height: 66px;
+  height: 80px;
   border: 1px solid #eee;
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 20px;
-  background: #f7f6f7;
+  background: #f68efa;
   padding: 0.8rem 1rem;
-  color: #828282;
+  font-size: 1.3rem;
+  color: #fff;;
   text-align: center;
   cursor: grab;
 }
@@ -48,17 +49,30 @@ body {
 
 .placeholder {
   width: 150px;
-  height: 66px;
+  height: 80px;
 }
 
 .start {
-  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+  background: linear-gradient(90deg, #262b27 0%, #034469 100%);
 }
 
 .progress {
-  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+  background: linear-gradient(90deg, #262b27 0%, #034469 100%);
 }
 
 .done {
-  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+  background: linear-gradient(90deg, #262b27 0%, #034469 100%);
+}
+
+.hold {
+  background: linear-gradient(to top, #fcc8ea 0%, #e393fc);
+  
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border: 2px dotted #fdb6ff;
 }
